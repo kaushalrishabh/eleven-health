@@ -4,7 +4,8 @@
   "description": "Login and registration for eleven health",
   "main": "server.js",
   "engine": {
-    "node": "18.4.0"
+    "node": "18.x",
+    "npm" : "8.x"
   },
   "scripts": {
     "start": "node server.js",
