@@ -150,13 +150,14 @@ const ForgetPass = () => {
 
             </form>
             {
-                flag ? <div className='bg-red' >{message}</div> 
+                flag ? <div className='bg-red f6' >{message}</div> 
                 : ''
             }
             {
                 Redirect ? 
-                        <div className='green'> 
-                            <span>Password changed successfully! Please login using new credentials</span>   
+                        <div className='green f6'> 
+                            <span>Password changed successfully! <br/>
+                                <span> Please login using new credentials </span> </span>   
                                 <button className='btn btn-success white'><Link to ="/" className='white'> Login </Link></button>
                         </div> 
                 : ''

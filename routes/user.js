@@ -96,7 +96,7 @@ router.put('/',
             //encrypt password using brcypt
             const salt = await brcypt.genSalt(10);
             let pass = await brcypt.hash(password, salt);
-            console.log(user);
+
             await User.findOneAndUpdate({ email }, { password: pass });
 
             //Save in DB
