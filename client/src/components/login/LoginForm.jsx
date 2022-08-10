@@ -71,26 +71,27 @@ const LoginForm = () => {
                     required
                 />
             </div>
-        </div> 
-        <div className='p-2'>
-            <span> 
-                <Link to='/ForgetPass' className='green'> Forget password </Link> 
-            </span>        
-        </div>
-        <div className="row mt-2">
-            <div className="container col-4">
-                <input className="btn btn-success" type='submit' name="Login" />
-            </div>
-            <div className='d-flex align-items-stretch p-2 col-8'>
-                <b>{ 
-                    flag ? (<div className='bg-red'>{message}</div> )
+           
+                <div className='p-2 form-group'>
+                    <span className='f6'> 
+                        <Link to='/ForgetPass' className='green'> Forget password </Link> 
+                    </span>        
+                </div>
+       
+                <div className="container form-group col-4">
+                    <input className="btn btn-success" type='submit' name="Login" />
+                </div>
+                <div className='d-flex f6 p-2 col-8'>
+                    <b>{ 
+                        flag ? (<div className='bg-red'>{message}</div> )
                         : ''
-                }</b>
-            </div>
-        </div>
-        <div className='mt-2'>
-            <span> <Link to='/Register' className='green'> User does not exist? Register here  </Link> </span>
-        </div>
+                    }</b>
+                </div>
+                <div className='mt-2'>
+                    <span className='f6'> <Link to='/Register' className='green'> User does not exist? Register here  </Link> </span>
+                </div>
+        </div> 
+        
     </form>
     </Fragment>
   )
